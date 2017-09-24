@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-#(c)2017 mh-g
+# (c)2017 mh-g
+# usage:
+# echo "Hello World" | ./std-in-to-user.py 
 
 from pydbus import SystemBus
 
