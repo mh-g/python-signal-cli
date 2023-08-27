@@ -11,7 +11,8 @@ data = sys.stdin.read()
 
 bus = SystemBus()
 
-signal = bus.get('org.asamk.Signal')
+signal = bus.get('org.asamk.Signal', object_path='/org/asamk/Signal/_OWN_ACCOUNT')
+# replace OWN_ACCOUNT with your local phone number (without leading '+' sign)
 
-signal.sendMessage(data, [], ['+___USER___'])
+signal.sendMessage(data, [], '+___USER___')
 # replace ___USER___ with the corresponding phone number
